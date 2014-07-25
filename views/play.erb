@@ -1,10 +1,18 @@
-<h1>Welcome <%= @player%></h1>
+<h2>Welcome <%= @player.capitalize%></h2>
+
+<h3>Animate yourself</h3>
+
 
 <form action="/play" method="POST">
 	<button name="pick" value="monkey">monkey</button>
-	<button name="pick" value="pirate">pirate</button>
 	<button name="pick" value="ninja">ninja</button>
+	<button name="pick" value="pirate">pirate</button>
 	<input type="hidden" name="name" value=<%=@name%>>
 </form>
 
-
+<h3>Remember:</h3> 
+<UL>
+<LI>Monkey fools ninja
+<LI>Pirate skewers monkey
+<LI>Ninja decapitates pirate
+</UL>
