@@ -11,12 +11,12 @@ class Game
 		}
 
 	def winner
-		return "Draw" if player1.picks == player2.picks
-		return player1  if BEATS[normalize(player1.picks)] == normalize(player2.picks)
+		return "Draw" if player1.pick == player2.pick
+		return player1  if BEATS[normalize(player1.pick)] == normalize(player2.pick)
 		player2
 	end
 
-	def normalize(picks)
-		picks.to_sym
+	def normalize(pick)
+		pick.to_sym
 	end
 end
